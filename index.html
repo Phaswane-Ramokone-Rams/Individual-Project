@@ -8,15 +8,18 @@
     <body>
         <section class="header">
             <nav>
+
                 <div class="para"><p>PHASWANE-RAMOKONE</p></div>
+                
                 <div class="nav-links" id="navLinks">
                     
                     <i ><img class="img-bar1"  src="delete-sign.png" alt="close button" onclick="hideMenu()" ></i>
                     <ul>
                         
-                        <li><a href="#">Skills</a></li>
+                        <li><a href="Skills.html">Skills</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="About.html">About</a></li>
                     </ul>
                 </div>
                 <i ><img class="img-bar" src="menu1.png" alt="menu button"  onclick="showMenu()"></i>
@@ -67,11 +70,12 @@
     <!----------Body/ second page----->
     <div class="pic">
 
-       <h1>IMAGE-MAP</h1>
+       <i><h1>IMAGE-MAP</h1></i>
+       <i><p>EXPLORE MORE BY CLICKING ON THE HEAD, BOOK AND CERT</p></i>
 
-         <a href="https://www.linkedin.com/feed/" class="area1"></a>
-         <a href="https://www.linkedin.com/feed/" class="area2"></a>
-         <a href="https://www.linkedin.com/feed/" class="area3"></a>
+         <a href="Skills.html" class="area1"></a><!-------book-------->
+         <a href="About.html" class="area2"></a><!-------head-------->
+         <a href="Projects.html" class="area3"></a><!--------diploma------->
 
     </div>
     
@@ -79,8 +83,9 @@
        
         <div class="about">
     
-            <h1>ABOUT</h1>  
-            <p>Collaborative Computer Science graduate with a
+        <i> <h1>ABOUT</h1>  </i>
+            <div class="service-col"> 
+               <p>Collaborative Computer Science graduate with a
                 proven academic experience alongside practical
                 experience. Seeking an entry level position as an
                 IT professional to further develop existing IT skills
@@ -90,11 +95,47 @@
                 through hard work,attention to detail and
                 quickness. Motivated to learn, grow and excel.</p>
 
-        </div>
+             </div>
 
         <div class="contact">
 
-            <h1>CONTACT</h1>
+           
+            <div class="contact-section" id="contact">
+
+                   
+                
+
+
+                <form action="https://api.web3forms.com/submit" class="contact-form" method="POST">
+                    <input type="hidden" name="access_key" value="98b89ff4-30a2-4841-91fe-23f393760d38">
+                    <h2>Contact Us</h2>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            
+            <script>
+                // JavaScript to handle form submission and show alert
+                function sendEmail(event) {
+                    event.preventDefault(); // Prevent page reload on form submission
+                    // Placeholder for actual email-sending logic
+                    alert("Message Sent! We will get back to you soon.");
+                    document.querySelector('.contact-form').reset(); // Clear form after submission
+                }
+            </script>
 
         </div>
         
@@ -102,7 +143,7 @@
     
 
     </body>
-    <footer>
+  <!----  <footer>
     <div class="footer-con">
             <div class="T1">
                 <p>&coprod; Office No:4 ~ 02 BrainWave,CapaCiti</p>
@@ -136,6 +177,52 @@
         </div>
             <p>&copy; 2024 PHASWANE-RAMOKONE-RAMS. All rights reserved.</p>
     </div>
+    </footer> ---->
+
+    <!------------testing------------>
+    <footer class="footer">
+        <div class="row">
+             <div class="col">
+                <img src="#" class="logo1" alt="Profile Pic">
+                <p>Offers
+                    strong interpersonal and task-prioritization skills,
+                    eagerness to contribute towards team success
+                    through hard work,attention to detail and
+                    quickness. 
+                </p>
+             </div>
+             <div class="col">
+                <h3>Office</h3>
+                <p>SOUTH AFRICA</p>
+                <p>CAPE TOWN- PARKLANDS</p>
+                <p class="email-id">phaswaneramss@gmail.com</p>
+                <h4> 0697553612 </h4>
+             </div>
+             <div class="col">
+                <h3>Links</h3>
+                <ul class="">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+             </div>
+             <div class="col">
+                <div class="social-icons">
+                    <a href="#" target="_blank">
+                        <img class="img1" src="In1.jpg" alt="LinkedIn">
+                     </a>
+                     <a href="#" target="_blank">
+                        <img class="img1" src="gmail.png" alt="gmail">
+                     </a>
+                     <a href="#" target="_blank">
+                        <img class="img1" src="Git1.png" alt="GitHub">
+                      </a>
+                </div>
+             </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy;  2024 PHASWANE-RAMOKONE-RAMS. All rights reserved.</p>
     </footer>
-    
+ </div>       
 </html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHASWANE-RAMOKONE-RAMS PORTFOLIO</title>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="index.css" >
+    </head>
+    <body>
+        <section class="header" id="header1">
+            <nav>
+                <div class="para"><p>PHASWANE-RAMOKONE</p></div>
+                <div class="nav-links" id="navLinks">
+                    
+                    <i ><img class="img-bar1"  src="delete-sign.png" alt="close button" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Skills.html">Skills</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="About.html">About</a></li>
+                    </ul>
+                </div>
+                <i ><img class="img-bar" src="menu1.png" alt="menu button"  onclick="showMenu()"></i>
+            </nav>
+
+        </section>
+         <!--------javascript for side menu--->
+         <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+     <!------------testing------------>
+     <footer class="footer">
+        <div class="row">
+             <div class="col">
+                <img src="#" class="logo1" alt="Profile Pic">
+                <p>Offers
+                    strong interpersonal and task-prioritization skills,
+                    eagerness to contribute towards team success
+                    through hard work,attention to detail and
+                    quickness. 
+                </p>
+             </div>
+             <div class="col">
+                <h3>Office</h3>
+                <p>SOUTH AFRICA</p>
+                <p>CAPE TOWN- PARKLANDS</p>
+                <p class="email-id">phaswaneramss@gmail.com</p>
+                <h4> 0697553612 </h4>
+             </div>
+             <div class="col">
+                <h3>Links</h3>
+                <ul class="">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+             </div>
+             <div class="col">
+                <div class="social-icons">
+                    <a href="#" target="_blank">
+                        <img class="img1" src="In1.jpg" alt="LinkedIn">
+                     </a>
+                     <a href="#" target="_blank">
+                        <img class="img1" src="gmail.png" alt="gmail">
+                     </a>
+                     <a href="#" target="_blank">
+                        <img class="img1" src="Git1.png" alt="GitHub">
+                      </a>
+                </div>
+             </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy;  2024 PHASWANE-RAMOKONE-RAMS. All rights reserved.</p>
+    </footer>
+ </div>
+ </html>      

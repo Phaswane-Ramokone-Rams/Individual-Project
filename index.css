@@ -26,6 +26,10 @@
     justify-content: top;
     align-items: top;
 }
+#header1{
+    height: 51vh;
+    background-image: url(Graduate.jpg);
+}
 .para {
     display: flex;
     padding: 2% 6%;
@@ -45,9 +49,11 @@ nav img{
 }
 header a{
     color: #fff;
+    cursor: pointer;
 }
 .nav-links ul li a{
-    font-size: 13px;
+    
+    cursor: pointer;
 }
 .nav-links{
     flex: 1;
@@ -199,11 +205,22 @@ background: rgba(0, 0, 0, 0.5);
     position: relative;
     background-position: center;
     height: 100vh;
+    max-width: 100%;
+    
 }
-.pic h1{
+.pic h1 {
     text-align: center;
     padding-top: 50px;  
+    cursor: pointer;
 }
+.pic p{
+    text-align: center;
+    padding-top: 20px; 
+    color:  #ce4343f8;
+    cursor: pointer;
+     
+}
+
 .area {
     position: absolute;
    
@@ -241,31 +258,120 @@ background: rgba(0, 0, 0, 0.5);
 .about{
     background-color: transparent;
     background: rgba(0, 0, 0, 0.5);
+   margin-bottom: 50px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   
 }
 .about h1{
     text-align: center;
     text-decoration: wavy;
-    
-    
+    cursor: pointer; 
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .about p{
-    
-   color: aqua;
+   color: rgb(189, 184, 184);
     padding: 10px;
+    cursor: pointer;
+    padding-bottom: 20px;
 }
+.service-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5;
+
+    width: 80%;
+    margin: auto;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.service-col:hover{
+    box-shadow: 0 0 70px 0px rgba(223, 71, 71, 0.2);
+}
+
 
 /*------------contact-------------*/
 .contact{
     background-color: transparent;
     background: rgba(0, 0, 0, 0.5);
+   
 }
 .contact h1{
     text-align: center;
     text-decoration: wavy;
+    cursor: pointer;
     
+}
+ /* Container Styling */
+ .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+/* Form Styling */
+.contact-form {
+    background: linear-gradient(to right,  #e0d8d5,#eb4a0b);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #fcfafa;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a3b1b8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #eac0f7;
 }
 
 /*-----footer/the last page of web------*/
+/*
 footer {
     background-image: url(B.jpg);
     background: rgba(0, 0, 0, 0.5);
@@ -323,7 +429,89 @@ footer {
 }
 .col:nth-child(2), .col:nth-child(3){
     flex-basis: 15%;
-} /*
+}
+
+/*---------------testing-----------------------*/
+
+footer{
+    width: 100%;
+    position: absolute;
+    
+    background: linear-gradient(to right, #2323be, #e0d8d5);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.footer p{
+    color: #fff;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.logo1{
+    width: 230px;
+    margin-bottom: 30px;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+}
+ ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+}
+.img1{
+    width: 50px;
+    margin: 10px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.img1:hover {
+    transform: scale(1.5);
+}
+
+
+
+
+/*
 .T1{
     width: 85%;
     margin: auto;
@@ -367,11 +555,18 @@ footer {
     .nav-links ul{
         padding: 30px;
     }
-    .img-bar{
+    .img-bar {
         display: block;
         cursor: pointer;
 
     }
+    .img-bar1 {
+        display: block;
+        cursor: pointer;
+
+    }
+     
+
     .img-bar1{
         display: block;
         cursor: pointer;
@@ -416,9 +611,16 @@ footer {
             height: 120px;
             cursor: pointer;
       }
+      .pic h1{
+            padding-left: 160px;
+      }
+      .pic p{
+        padding-left: 160px;
+        
+  }
 
     /*----foooter/ the last page of the web---*/
-    
+    /*
     .social-media-icons .img{
         flex-basis: 100%;
     } 
@@ -432,6 +634,42 @@ footer {
         margin-top: 5%;
         display: inline-block;
         justify-content: space-between;
+    } */
+
+     /*--------------testing-----------------------*/
+     
+    /*-----------footer--------------*/
+    .logo1{
+        width: 180px;
+        margin-bottom: 30px;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+    .img1{
+        width: 30px;
+        margin: 10px;
+        height: 30px;
+    }
+    .footer{
+        padding-left: 30px;
+    }
+    .col h3{
+        text-align: center;
+        padding-left: 60px;
+    }
+    .logo1{
+        padding-left: 80px;
+    }
+    .social-icons {
+        padding-left:40px;
+    }
+    #header1 img{
+        max-width: fit-content;
+        
     }
 
 
