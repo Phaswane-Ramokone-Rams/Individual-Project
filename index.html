@@ -99,6 +99,7 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <div class="form-group">
+                        <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html#contact">
                         <button type="submit">Send Message</button>
                     </div>
                 </form>
@@ -115,24 +116,24 @@
             </script>
     ------>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
             <!----_--------------testing javascript---------------->
             <script>
-                // JavaScript to handle form submission
-                function sendEmail(event) {
-                    event.preventDefault(); // Prevent page reload on form submission
-            
-                    // Display success message
-                    const successMessage = document.getElementById('success-message');
-                    successMessage.style.display = 'block';
-            
-                    // Clear form fields
-                    document.querySelector('.contact-form').reset();
-            
-                    // Hide success message after a few seconds
-                    setTimeout(() => {
-                        successMessage.style.display = 'none';
-                    }, 3000); // 3000 milliseconds = 3 seconds
-                }
+                  // Add an event listener to the form submission
+  document.querySelector(".contact-form").addEventListener("submit", function (event) {
+      // Prevent the default form submission
+      event.preventDefault();
+      // Trigger Swal.fire after form submission
+      Swal.fire({
+          title: "Success",
+          text: "Message sent successfully",
+          icon: "success"
+      }).then(() => {
+          // After the user acknowledges the Swal.fire message, submit the form
+          event.target.submit();
+      });
+  });
             </script>
         </div>
         
