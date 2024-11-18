@@ -4,25 +4,26 @@
         <title>PHASWANE-RAMOKONE-RAMS PORTFOLIO</title>
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <link rel="stylesheet" href="index.css" >
+        <link rel="icon" type="image" href="profile.jpg">
+        <link >
     </head>
     <body>
         <section class="header">
             <nav>
 
                 <div class="para"><p>PHASWANE-RAMOKONE</p>
-                    <img src="PROOOO.jpg" alt="pro-pic">
+                    <img src="profile.jpg" alt="pro-pic">
                 </div>
 
-                
+             
                 <div class="nav-links" id="navLinks">
                     
-                    <i ><img class="img-bar1"  src="delete-sign.png" alt="close button" onclick="hideMenu()" ></i>
+                    <i ><img class="img-bar1"  src="close1437.jpg" alt="close button" onclick="hideMenu()" ></i>
                     <ul>
-                        
                         <li><a href="Skills.html">Skills</a></li>
                         <li><a href="Projects.html">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="About.html">About</a></li>
                     </ul>
                 </div>
                 <i ><img class="img-bar" src="menu1.png" alt="menu button"  onclick="showMenu()"></i>
@@ -41,44 +42,16 @@
             }
         </script>
 
-        <!-------------header for introduction------>
-  <!------  <header class="header">
-        <nav class="navbar" id="navLinks">
-            <div><a href="#"><p>PHASWANE-RAMOKONE</p></a></div>
-
-            <i ><img class="img-bar1"  src="close1437.jpg" alt="close button" onclick="hideMenu()" ></i>
-            <ul>
-                <li><a href="Skills.html">SKILLS</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">ABOUT</a></li>
-            </ul>
-
-            <i ><img class="img-bar" src="menu_icon_244496.png" alt="menu button"  onclick="showMenu()"></i>
-        </nav>
-    </header> ----->
-
-     <!--------javascript for side menu--->
- <!--   <script>
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-    </script> ---> 
-    
-
+ 
     <!----------Body/ second page----->
     <div class="pic">
 
        <i><h1>IMAGE-MAP</h1></i>
        <i><p>EXPLORE MORE BY CLICKING ON THE HEAD, BOOK AND CERT</p></i>
 
-         <a href="Skills.html" class="area1"></a><!-------book-------->
-         <a href="#about" class="area2"></a><!-------head-------->
-         <a href="Projects.html" class="area3"></a><!--------diploma------->
+         <a href="Skills.html" class="area1"><img src="#" height="10px" width="10px"></a><!-------book-------->
+         <a href="About.html" class="area2"><img  src="#" height="10px" width="10px"></a><!-------head-------->
+         <a href="Projects.html" class="area3"><img  src="#" height="10px" width="10px"></a><!--------diploma------->
 
     </div>
     
@@ -131,7 +104,7 @@
                 </form>
             </div>
             
-            <script>
+        <!-----    <script>
                 // JavaScript to handle form submission and show alert
                 function sendEmail(event) {
                     event.preventDefault(); // Prevent page reload on form submission
@@ -140,49 +113,31 @@
                     document.querySelector('.contact-form').reset(); // Clear form after submission
                 }
             </script>
+    ------>
 
+            <!----_--------------testing javascript---------------->
+            <script>
+                // JavaScript to handle form submission
+                function sendEmail(event) {
+                    event.preventDefault(); // Prevent page reload on form submission
+            
+                    // Display success message
+                    const successMessage = document.getElementById('success-message');
+                    successMessage.style.display = 'block';
+            
+                    // Clear form fields
+                    document.querySelector('.contact-form').reset();
+            
+                    // Hide success message after a few seconds
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 3000); // 3000 milliseconds = 3 seconds
+                }
+            </script>
         </div>
         
 
     
-
-    </body>
-  <!----  <footer>
-    <div class="footer-con">
-            <div class="T1">
-                <p>&coprod; Office No:4 ~ 02 BrainWave,CapaCiti</p>
-            </div>
-        <div class="social-media-icons">
-
-            <div class="T1">
-                <p>&coprod; Office No:4 ~ 02 BrainWave,CapaCiti</p>
-            </div>
-
-           <div class="T2">     
-                <div class="col">
-                    <a href="#" target="_blank">
-                    <img class="img1" src="Git1.png" alt="GitHub">
-                  </a>
-               </div>
-               <div class="col1">
-                <a href="#" target="_blank">
-                   <img class="img1" src="gmail.png" alt="gmail">
-                </a>
-              </div>
-
-               <div class="col">
-                 <a href="#" target="_blank">
-                    <img class="img1" src="In1.jpg" alt="LinkedIn">
-                 </a>
-               </div>
-
-               
-            </div>
-        </div>
-            <p>&copy; 2024 PHASWANE-RAMOKONE-RAMS. All rights reserved.</p>
-    </div>
-    </footer> ---->
-
     <!------------testing------------>
     <footer class="footer">
         <div class="row">
@@ -205,7 +160,7 @@
              <div class="col">
                 <h3>Links</h3>
                 <ul class="">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
                     <li><a href="Skills.html">Skills</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="#contact">Contacts</a></li>
@@ -213,13 +168,13 @@
              </div>
              <div class="col">
                 <div class="social-icons">
-                    <a href="#" target="_blank">
+                    <a href="www.linkedin.com/in/phaswane-ramokone-a7333b301" target="_blank">
                         <img class="img1" src="In1.jpg" alt="LinkedIn">
                      </a>
                      <a href="#" target="_blank">
                         <img class="img1" src="gmail.png" alt="gmail">
                      </a>
-                     <a href="#" target="_blank">
+                     <a href="https://github.com/Phaswane-Ramokone-Rams" target="_blank">
                         <img class="img1" src="Git1.png" alt="GitHub">
                       </a>
                 </div>
@@ -227,6 +182,11 @@
         </div>
         <hr>
         <p class="copyright">&copy;  2024 PHASWANE-RAMOKONE-RAMS. All rights reserved.</p>
+    </div> 
     </footer>
- </div>       
+ 
+
+    </body>
+  
+      
 </html>
