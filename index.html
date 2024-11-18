@@ -100,10 +100,12 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <div class="form-group">
+                        <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html#contact">
                         <button type="submit">Send Message</button>
                     </div>
                 </form>
             </div>
+<<<<<<< HEAD
  
             <!----_--------------testing javascript---------------->
             <script>
@@ -123,6 +125,29 @@
                         successMessage.style.display = 'none';
                     }, 3000); // 3000 milliseconds = 3 seconds
                 }
+=======
+            
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+            <!----_--------------testing javascript---------------->
+            <script>
+                  // Add an event listener to the form submission
+  document.querySelector(".contact-form").addEventListener("submit", function (event) {
+      // Prevent the default form submission
+      event.preventDefault();
+      // Trigger Swal.fire after form submission
+      Swal.fire({
+          title: "Success",
+          text: "Message sent successfully",
+          icon: "success"
+      }).then(() => {
+          // After the user acknowledges the Swal.fire message, submit the form
+          event.target.submit();
+      });
+  });
+>>>>>>> 49b03c52e2a7f2151abb16f0a0a86094e4aad560
             </script>
         </div>
         
