@@ -62,6 +62,7 @@ header a{
 .nav-links ul li a{
     
     cursor: pointer;
+    
 }
 .nav-links{
     flex: 1;
@@ -86,29 +87,16 @@ nav{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 25px;
 }
-.nav-links a:link{
-    color: red;
-    background-color: transparent;
-    text-decoration: aqua;
-}
-.nav-links a:visited{
-    color: rgb(199, 99, 157);
-    background-color: transparent;
-    text-decoration: line-through;
-}
+
 .nav-links a:hover{
     color: rgb(243, 156, 41);
     background-color: transparent;
     text-decoration: none;
     transform: scale(1.5);
 }
-.nav-links a:active{
-    color: rgb(158, 243, 60) ;
-    background-color: transparent;
-    text-decoration: solid;
-}
+
 .nav-links a:hover {
     transform: scale(1.5);
     padding: 1rem 0;
@@ -530,13 +518,19 @@ footer{
     width: fit-content;
     border-bottom: 1px solid #ccc;
 }
- ul li{
+ .footer ul li{
     list-style: none;
     margin-bottom: 12px;
 }
- ul li a{
+ .footer ul li a{
     text-decoration: none;
     color: #fff;
+}
+.col p{
+    font-size: 20px;
+}
+.col a{
+    font-size: 20px;
 }
 hr{
     width: 90%;
